@@ -7,7 +7,21 @@ exports = module.exports = {
   datasets,
   algo: function (input) {
     // YOUR CODE BETWEEN HERE
-
+    let N
+    N = input[0];
+    let P;
+    P = input[(1, N)];
+    let PoidTotal
+    PoidTotal = 0;
+    for (let  i = 0; i < N; i++) {
+      PoidTotal += P[i]
+      PoidTotal = parseInt(PoidTotal,10)
+    }
+    if (PoidTotal < 100) {
+      return 1
+    } else {
+      return PoidTotal / 100
+    }
     // AND HERE
   },
   verify: function (dataset, output) {
